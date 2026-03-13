@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Final Redirect
     setTimeout(() => {
         window.location.href = REDIRECT_URL;
-    }, 15000);
+    }, 5000);
 
     // --- Countdown Logic ---
     let targetTimestamp = localStorage.getItem(TARGET_DATE_KEY);
