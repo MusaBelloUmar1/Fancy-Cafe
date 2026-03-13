@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Flour Cafe</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,600,700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div id="app">
+        <!-- Toast Warning -->
+        <div id="shutdown-toast" class="toast hidden">
+            <span id="countdown-text">Shutting down in 04d 00h 00m 00s</span>
+        </div>
+
+        <!-- Intro Overlay -->
+        <div id="intro-overlay">
+            <div id="intro-hello" class="intro-text">Hello!</div>
+            <div id="intro-welcome" class="intro-text">Welcome</div>
+            <div id="intro-2" class="intro-text">2</div>
+        </div>
+
+        <!-- Main Content -->
+        <main id="main-content" class="hidden">
+            <div class="container">
+                <div class="logo-circle">
+                    <div class="logo-placeholder">FFC</div>
+                </div>
+
+                <div class="badge">welcome to</div>
+
+                <h1 class="cafe-title">Fancy Flour Cafe</h1>
+
+                <a href="https://www.qrshop.name.ng/fancycafe" class="continue-btn">
+                    <span>Continue</span>
+                    <div class="btn-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <!-- Modal -->
+        <div id="modal-backdrop" class="modal-backdrop hidden">
+            <div class="modal">
+                <button id="close-modal" class="close-btn">&times;</button>
+                <h2 class="modal-title">Service Shutdown Notice</h2>
+                <div class="modal-body">
+                    <p>This website may shut down soon.</p>
+                    <p>The person who built and maintains this project has not been paid for the work. Because of that, it has become difficult to keep running and maintaining the service.</p>
+                    <p>The countdown above is only a warning that the project might stop operating in the near future.</p>
+                    <p>For now, the website will continue working normally.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
